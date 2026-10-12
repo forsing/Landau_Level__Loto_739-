@@ -9,9 +9,9 @@ import numpy as np
 
 
 DEFAULTS = (
-    "/Users/4c/Desktop/GHQ/data/loto7_4698_k80.csv",
-    "/Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_2971.csv",
-    "/Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_plus_1727.csv",
+    "/data/loto7_4698_k80.csv",
+    "/data/loto7_4698_k80_loto_2971.csv",
+    "/data/loto7_4698_k80_loto_plus_1727.csv",
 )
 
 
@@ -367,7 +367,7 @@ if __name__ == "__main__":
 
 
 """
-Ulaz: /Users/4c/Desktop/GHQ/data/loto7_4698_k80.csv; redova=4698
+Ulaz: /data/loto7_4698_k80.csv; redova=4698
 Validacija: 16/48
 Validacija: 32/48
 Validacija: 48/48
@@ -380,14 +380,14 @@ Test: redovi 4635..4698
 LANDAU V2b LEVELS: prosek=1.1562; pogodaka 0..7=[16, 25, 20, 3, 0, 0, 0, 0]
 Prethodna kombinacija: prosek=1.2188; pogodaka 0..7=[13, 30, 16, 4, 1, 0, 0, 0]
 Poslednji red: 4,12,18,28,35,36,37
-SLEDECI RED 4699: 1,5,6,11,12,28,30
+SLEDECI RED 4699: 1,x,6,y,12,z,30
 Skor rangiranja=0.1787779153; kandidata=14396
 Strukturni nivoi E: 0.000000, 1.484299, 2.041512, 2.231685, 2.342474, 2.411967, 2.422086, 2.559683
 Izbor: poslednje 64 kombinacije i sve njihove zamene jednog broja.
 
 
 
-Ulaz: /Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_2971.csv; redova=2971
+Ulaz: /data/loto7_4698_k80_loto_2971.csv; redova=2971
 Validacija: 16/48
 Validacija: 32/48
 Validacija: 48/48
@@ -400,14 +400,14 @@ Test: redovi 2908..2971
 LANDAU V2b LEVELS: prosek=1.3438; pogodaka 0..7=[11, 30, 14, 8, 1, 0, 0, 0]
 Prethodna kombinacija: prosek=1.2969; pogodaka 0..7=[11, 30, 16, 7, 0, 0, 0, 0]
 Poslednji red: 18,20,21,24,29,34,38
-SLEDECI RED 2972: 8,9,10,12,13,28,34
+SLEDECI RED 2972: 8,x,10,y,13,z,34
 Skor rangiranja=0.2154661864; kandidata=14392
 Strukturni nivoi E: 0.000000, 1.566343, 2.087795, 2.101864, 2.259496, 2.415445, 2.491050, 2.668013
 Izbor: poslednje 64 kombinacije i sve njihove zamene jednog broja.
 
 
 
-Ulaz: /Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_plus_1727.csv; redova=1727
+Ulaz: /data/loto7_4698_k80_loto_plus_1727.csv; redova=1727
 Validacija: 16/48
 Validacija: 32/48
 Validacija: 48/48
@@ -420,7 +420,7 @@ Test: redovi 1664..1727
 LANDAU V2b LEVELS: prosek=1.3281; pogodaka 0..7=[16, 18, 24, 5, 1, 0, 0, 0]
 Prethodna kombinacija: prosek=1.2969; pogodaka 0..7=[15, 23, 18, 8, 0, 0, 0, 0]
 Poslednji red: 4,12,18,28,35,36,37
-SLEDECI RED 1728: 9,10,27,29,30,31,37
+SLEDECI RED 1728: 9,x,27,y,30,z,37
 Skor rangiranja=0.1533506861; kandidata=14388
 Strukturni nivoi E: 0.000000, 1.454544, 1.949805, 2.243283, 2.305993, 2.431488, 2.535364, 2.583433
 Izbor: poslednje 64 kombinacije i sve njihove zamene jednog broja.
@@ -433,9 +433,9 @@ Izlaz će se birati rangiranjem celih kombinacija, bez prosečnih položaja broj
 quantum levels je popravljena i proverena na sva tri CSV fajla. Uči rang cele kombinacije kroz diskretne strukturne nivoe. Nema prosečenja položaja, ciljnih prosečnih zauzeća nivoa, random postupka ni semena sa jednakim razmacima.
 
 Fajl	                Sledeća kombinacija	    Prosek pogodaka, poslednja 64 kola
-Objedinjeni, red 4699	1,5,6,11,12,28,30	    1,1562
-Loto, red 2972	        8,9,10,12,13,28,34	    1,3438
-Loto Plus, red 1728	    9,10,27,29,30,31,37	    1,3281
+Objedinjeni, red 4699	1,x,6,y,12,z,30	        1,1562
+Loto, red 2972	        8,x,10,y,13,z,34	    1,3438
+Loto Plus, red 1728	    9,x,27,y,30,z,37	    1,3281
 
 Pretraga obuhvata poslednje 64 kombinacije i sve njihove zamene jednog broja. Bez argumenata kod obrađuje sva tri fajla zasebno.
 """
