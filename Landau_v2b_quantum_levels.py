@@ -9,9 +9,9 @@ import numpy as np
 
 
 
-DEFAULT = "/Users/4c/Desktop/GHQ/data/loto7_4698_k80.csv"
-# DEFAULT = "/Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_2971.csv"
-# DEFAULT = "/Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_plus_1727.csv"
+DEFAULT = "/data/loto7_4698_k80.csv"
+# DEFAULT = "/data/loto7_4698_k80_loto_2971.csv"
+# DEFAULT = "/data/loto7_4698_k80_loto_plus_1727.csv"
 
 
 
@@ -485,7 +485,7 @@ if __name__ == "__main__":
 
 
 """
-Ulaz: /Users/4c/Desktop/GHQ/data/loto7_4698_k80.csv; redova=4698
+Ulaz: /data/loto7_4698_k80.csv; redova=4698
 Validacija: 16/48
 Validacija: 32/48
 Validacija: 48/48
@@ -499,7 +499,7 @@ LANDAU LEVELS V2b: prosek=1.1562; pogodaka 0..7=[17, 24, 19, 4, 0, 0, 0, 0]
 Prethodna kombinacija: prosek=1.2188; pogodaka 0..7=[13, 30, 16, 4, 1, 0, 0, 0]
 Nivoi bez vremenskog uslovljavanja: prosek=1.3281; pogodaka 0..7=[16, 19, 22, 6, 1, 0, 0, 0]
 Poslednji red: 4,12,18,28,35,36,37
-SLEDECI RED 4699: 3,5,6,11,21,25,39
+SLEDECI RED 4699: 3,x,6,y,21,z,39
 Skor=0.9957389345; iteracija=22
 Nivo 0: E=-0.000000; tezina=0.701898
 Nivo 1: E=1.558860; tezina=0.105450
@@ -517,7 +517,7 @@ E je strukturni spektar. Skor rangira kombinacije; globalni maksimum pretrage ni
 
 
 
-Ulaz: /Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_2971.csv; redova=2971
+Ulaz: /data/loto7_4698_k80_loto_2971.csv; redova=2971
 Validacija: 16/48
 Validacija: 32/48
 Validacija: 48/48
@@ -531,7 +531,7 @@ LANDAU LEVELS V2b: prosek=1.2188; pogodaka 0..7=[18, 20, 20, 6, 0, 0, 0, 0]
 Prethodna kombinacija: prosek=1.2969; pogodaka 0..7=[11, 30, 16, 7, 0, 0, 0, 0]
 Nivoi bez vremenskog uslovljavanja: prosek=1.3594; pogodaka 0..7=[12, 20, 29, 3, 0, 0, 0, 0]
 Poslednji red: 18,20,21,24,29,34,38
-SLEDECI RED 2972: 5,10,17,25,31,34,35
+SLEDECI RED 2972: 5,x,17,y,31,z,35
 Skor=0.9985165622; iteracija=31
 Nivo 0: E=-0.000000; tezina=0.824533
 Nivo 1: E=1.499461; tezina=0.060277
@@ -549,7 +549,7 @@ E je strukturni spektar. Skor rangira kombinacije; globalni maksimum pretrage ni
 
 
 
-Ulaz: /Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_plus_1727.csv; redova=1727
+Ulaz: /data/loto7_4698_k80_loto_plus_1727.csv; redova=1727
 Validacija: 16/48
 Validacija: 32/48
 Validacija: 48/48
@@ -563,7 +563,7 @@ LANDAU LEVELS V2b: prosek=1.3281; pogodaka 0..7=[14, 25, 16, 8, 1, 0, 0, 0]
 Prethodna kombinacija: prosek=1.2969; pogodaka 0..7=[15, 23, 18, 8, 0, 0, 0, 0]
 Nivoi bez vremenskog uslovljavanja: prosek=1.2500; pogodaka 0..7=[15, 25, 17, 7, 0, 0, 0, 0]
 Poslednji red: 4,12,18,28,35,36,37
-SLEDECI RED 1728: 5,6,11,14,21,27,39
+SLEDECI RED 1728: 5,x,11,y,21,z,39
 Skor=0.9902051840; iteracija=14
 Nivo 0: E=-0.000000; tezina=0.692592
 Nivo 1: E=1.467715; tezina=0.090813
@@ -594,10 +594,6 @@ V2c zahteva preciznije određenje šta u modelu predstavlja pobudu, a šta odziv
 
 Strukturne nivoe izvešću iz odnosa položaja i razmaka u csv fajlu, zatim proveriti predikcije kroz kola hronološki. 
 Nivoe izvodi iz spektra strukturnih sličnosti, zatim uči njihovu raspodelu za naredno kolo.
-
-
-Predlog za red 4699:
-3, 5, 6, 11, 21, 25, 39
 
 
 Rezultati na poslednja 64 kola:
